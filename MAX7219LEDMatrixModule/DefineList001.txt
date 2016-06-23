@@ -1,0 +1,11 @@
+#define reg_noop 0x00
+#define reg_decode_mode 0x09
+#define reg_brightness 0x0A
+#define reg_scan_limit 0x0B
+#define reg_shutdown 0x0C
+#define reg_test 0x0F
+
+#define DIN 10
+#define CS 9
+#define CLK 8
+#define DEVICE_NUMBER 2
