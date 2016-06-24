@@ -35,13 +35,14 @@ void setup() {
 }
 
 void loop() {
-    static int delta = -16;
+    static char delta = DEVICE_NUMBER * 8;
     for (int i = 0; i < length; i++) {
         for (int j = 0; j < 5; j++) {
-            drawColumn(i * 5 + j - delta, font5x7[(helloString[i] - 32) * 5 + j]);
+            drawColumn(i * 5 + j + delta, font5x7[(helloString[i] - 32) * 5 + j]);
         }
     } delay(100);
-    delta = (delta > (length*5)) ? -16 : (delta + 1);
+    delta = (delta < -(length * 5)) ? DEVICE_NUMBER * 8 : (delta - 1);
+    clearAllLEDs();
 }
 
 void drawColumn(byte column, byte value) {
