@@ -1,0 +1,9 @@
+#define reg_no_op       0x00
+#define reg_digit_0     0x01
+#define reg_digit_1     0x02
+#define reg_digit_2     0x03
+#define reg_digit_3     0x04
+#define reg_digit_4     0x05
+#define reg_digit_5     0x06
+#define reg_digit_6     0x07
+#define reg_digit_7     0x08
