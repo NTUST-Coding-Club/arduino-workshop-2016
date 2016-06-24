@@ -7,3 +7,8 @@
 #define reg_digit_5     0x06
 #define reg_digit_6     0x07
 #define reg_digit_7     0x08
+#define reg_decode_mode 0x09
+#define reg_brightness  0x0A
+#define reg_scan_limit  0x0B
+#define reg_shutdown    0x0C
+#define reg_test        0x0F
