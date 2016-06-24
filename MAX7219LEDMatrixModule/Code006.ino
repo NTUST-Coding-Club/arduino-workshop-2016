@@ -36,7 +36,7 @@ void setup() {
     Serial.begin(9600);
     Serial.println("Setting Complete!");
     // Hi
-    for(byte i = 0; i < 16; i++) {
+    for (byte i = 0; i < 16; i++) {
         drawColumn(i, columns[i]);
     }
 }
